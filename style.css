@@ -1,0 +1,253 @@
+:root{
+    --system-ui: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: var(--system-ui);
+    background-color: rgb(0,0,0,0.1);
+}
+
+.left-menu{
+    color: white;
+    height: 100vh;
+    padding: 0 70px 0 10px;
+    background-color: rgb(49, 139, 199);
+}
+
+.heading, .main-links > div, .other-links > div, .container,
+.searchbar-profile, .searchbar, .bell-small-profile, .small-profile,
+.profile-btns, .big-profile{
+    display: flex;
+}
+
+.heading, .main-links > div, .other-links > div{
+    gap: 0 10px;
+}
+
+.heading img{
+    width: 50px;
+}
+
+.heading h1{
+    font-size: 30px;
+    font-weight: 800;
+    padding: 0;
+}
+
+.menu-items{
+    padding: 20px;
+}
+
+.main-links > div, .other-links > div{
+    justify-content: left;
+    gap: 0 10px;
+}
+
+.main-links > div >img, .other-links > div > img, .searchbar > img, 
+.bell-small-profile > img{
+    width: 30px;
+}
+
+.small-profile > img{
+    width: 40px;
+    padding: 0 10px;
+}
+
+.big-profile > img{
+    width: 80px;
+}
+
+.main-links > div > p, .other-links > div > p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-links{
+    margin-bottom: 30px;
+}
+
+header{
+    padding: 30px;
+    background-color: white;
+}
+
+/* right content */
+
+.right-content{
+    width: 100%;
+}
+
+.search-icon, .bell-icon, .profile-photo-small, .small-profile p{
+    height: max-content;
+}
+
+.searchbar{
+    gap: 0 20px;
+}
+
+.searchbar-input{
+    width: 1000px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(0,0,0,0.1);
+}
+
+.bell-small-profile{
+    width: 100%;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+.small-profile{
+    gap: 0 20px;
+}
+
+.small-profile p{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0;
+    margin: auto;
+}
+
+.searchbar-profile{
+    margin-bottom: 20px;
+}
+
+.profile-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-profile-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.big-profile-text h2, h3{
+    margin: auto 0;
+}
+
+.big-profile-text h2{
+    font-size: 1.3rem;
+}
+
+.big-profile-text h3{
+    font-size: 1rem;
+}
+
+.btns{
+    align-self: center;
+    display: flex;
+    gap: 0 30px;
+}
+
+.btns button{
+    font-family: var(--system-ui);
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    width:100px;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: rgb(49, 139, 199);
+}
+
+main{
+    display: flex;
+    padding: 0 30px;
+}
+
+/* Projects */
+.projects-container h4, .announcements-container h4{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 30px;
+}
+
+.project{
+    border-left: 10px solid rgb( 243, 156, 18 );
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.project h5{
+    margin: 0;
+    font-size: 20px;
+}
+
+.project p{
+    font-size: 18px;
+    color: rgb(89, 85, 85);
+    margin: 0;
+}
+
+.project-icons{
+    display: flex;
+    gap: 20px;
+    width: 30px;
+    margin: 0 auto;
+}
+
+/* announcements */
+.announcement-and-trending-container{
+    width: 50%;
+}
+
+.announcement-content, .trending-content{
+    
+    border-radius: 10px;
+    background-color: white;
+}
+
+.announcement-content{
+  padding: 30px;
+}
+
+.announcement h5{
+    margin: 0;
+    font-size: 17px;
+}
+
+.announcement p, .trend-desc p{
+    margin: 0;
+    color: rgb(89, 85, 85);
+    font-size: 0.9rem;
+}
+
+/* trending */
+.trend img{
+    width: 80px;
+}
+
+.trend-desc{
+    margin: auto 0;
+}
+
+.trend-desc p, .trend-desc h5{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.trend{
+    display: flex;
+    padding: 8px 10px;
+}
+
+/* Currently active tab */
+.menu-items .main-links .active{
+    color: black;
+    border-radius: 1rem;
+    background-color: white;
+}
